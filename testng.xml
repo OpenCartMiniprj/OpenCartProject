@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="TestSuite" thread-count="2" parallel="tests">
+	<test name="ChromeTest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.psl.OpenCart.Tests.ShoppingCartPFTest">
+			</class>
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.psl.OpenCart.Tests.ShoppingCartPFTest">
+			</class>
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="browser" value="Edge" />
+		<classes>
+			<class name="com.psl.OpenCart.Tests.ShoppingCartPFTest">
+			</class>
+		</classes>
+	</test>
+</suite>
+
+
+<!--  <suite name="Suite">
+  <test thread-count="5" name="Test" parallel="tests">
+  </test>
+  <test name="FirefoxTest">
+	<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.psl.OpenCart.Tests.ShoppingCartPFTest">
+		</class>
+	</classes>
+</test>
+</suite> 
+-->
