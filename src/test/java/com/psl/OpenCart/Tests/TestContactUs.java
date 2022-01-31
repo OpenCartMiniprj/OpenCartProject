@@ -15,6 +15,8 @@ import org.testng.annotations.Test;
 import com.psl.OpenCart.commons.LoggersExample;
 import com.psl.OpenCart.pages.ContactUsPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 /**
@@ -27,7 +29,7 @@ public class TestContactUs {
 	@BeforeTest
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://localhost/opencartpro");

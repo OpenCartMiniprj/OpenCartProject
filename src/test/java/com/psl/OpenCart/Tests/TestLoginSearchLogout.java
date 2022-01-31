@@ -23,7 +23,7 @@ public class TestLoginSearchLogout {
 
 	@BeforeTest(groups = { "Regression" })
 	public void driverSetup() {
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://localhost/opencartpro");

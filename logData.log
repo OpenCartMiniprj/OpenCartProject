@@ -2068,4 +2068,160 @@ Share
   2022-01-26 18:03:14 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
   2022-01-26 18:03:14 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/extent_report_jars/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
   2022-01-26 18:03:14 INFO  LoggersExample:234 - Browser closed successfully!!!
+  2022-01-27 11:25:05 INFO  LoggersExample:77 - Browser opened successfully!!!
+  2022-01-27 11:25:13 INFO  LoggersExample:100 -  successfully submitted
+  2022-01-27 11:25:13 INFO  LoggersExample:95 - Tested contact form with valid data
+  2022-01-27 11:25:23 INFO  LoggersExample:110 -  enter correct email
+  2022-01-27 11:25:23 INFO  LoggersExample:103 - Tested contact form with Invalid data
+  2022-01-27 11:25:23 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-27 11:25:27 INFO  LoggersExample:112 - Tested login page with Invalid data
+  2022-01-27 11:25:27 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-27 11:25:29 INFO  LoggersExample:121 - Tested login page with Invalid data
+  2022-01-27 11:25:30 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-27 11:25:32 INFO  LoggersExample:131 - Tested login page with valid data
+  2022-01-27 11:25:33 INFO  LoggersExample:87 - Converted to€currency successfully
+  2022-01-27 11:25:33 INFO  LoggersExample:139 - Tested Euro currency functionality.
+  2022-01-27 11:25:34 INFO  LoggersExample:87 - Converted to£currency successfully
+  2022-01-27 11:25:34 INFO  LoggersExample:147 - Tested Pound currency functionality.
+  2022-01-27 11:25:34 INFO  LoggersExample:87 - Converted to$currency successfully
+  2022-01-27 11:25:34 INFO  LoggersExample:155 - Tested USDollar functionality.
+  2022-01-27 11:25:38 INFO  LoggersExample:163 - Tested search functionality.
+  2022-01-27 11:25:39 INFO  LoggersExample:172 - Tested PhonesAndPDAs functionality.
+  2022-01-27 11:25:48 INFO  LoggersExample:182 - Tested select phone functionality.
+  2022-01-27 11:25:49 INFO  LoggersExample:124 - Shopping cart is empty! Added product
+  2022-01-27 11:25:50 INFO  LoggersExample:190 - Tested empty cart in cart functionality.
+  2022-01-27 11:25:51 INFO  LoggersExample:77 - Updated count of item in cart
+  2022-01-27 11:25:52 INFO  LoggersExample:199 - Tested Update items in cart functionality.
+  2022-01-27 11:25:53 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-27 11:25:54 INFO  LoggersExample:86 - Clicked on remove button
+  2022-01-27 11:25:54 INFO  LoggersExample:208 - Tested Remove item from cart functionality.
+  2022-01-27 11:26:21 INFO  LoggersExample:122 - E-Mail Address does not appear to be valid!
+  2022-01-27 11:26:21 INFO  LoggersExample:217 - Tested edit account info functionality with valid credentials.
+  2022-01-27 11:26:21 INFO  LoggersExample:230 - Logged Out succesfully
+  2022-01-27 11:26:21 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+  2022-01-27 11:26:21 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+  2022-01-27 11:26:21 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+  2022-01-27 11:26:21 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+  2022-01-27 11:26:21 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/extent_report_jars/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+  2022-01-27 11:26:22 INFO  LoggersExample:239 - Browser closed successfully!!!
+  2022-01-31 15:09:36 INFO  LoggersExample:77 - Browser opened successfully!!!
+  2022-01-31 15:09:45 INFO  LoggersExample:100 -  successfully submitted
+  2022-01-31 15:09:45 INFO  LoggersExample:95 - Tested contact form with valid data
+  2022-01-31 15:09:56 INFO  LoggersExample:110 -  enter correct email
+  2022-01-31 15:09:56 INFO  LoggersExample:103 - Tested contact form with Invalid data
+  2022-01-31 15:09:56 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 15:09:59 INFO  LoggersExample:112 - Tested login page with Invalid data
+  2022-01-31 15:09:59 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 15:10:01 INFO  LoggersExample:121 - Tested login page with Invalid data
+  2022-01-31 15:10:01 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 15:10:03 INFO  LoggersExample:131 - Tested login page with valid data
+  2022-01-31 15:10:05 INFO  LoggersExample:87 - Converted to€currency successfully
+  2022-01-31 15:10:05 INFO  LoggersExample:139 - Tested Euro currency functionality.
+  2022-01-31 15:10:06 INFO  LoggersExample:87 - Converted to£currency successfully
+  2022-01-31 15:10:06 INFO  LoggersExample:147 - Tested Pound currency functionality.
+  2022-01-31 15:10:07 INFO  LoggersExample:87 - Converted to$currency successfully
+  2022-01-31 15:10:07 INFO  LoggersExample:155 - Tested USDollar functionality.
+  2022-01-31 15:10:13 INFO  LoggersExample:163 - Tested search functionality.
+  2022-01-31 15:10:14 INFO  LoggersExample:172 - Tested PhonesAndPDAs functionality.
+  2022-01-31 15:10:30 INFO  LoggersExample:182 - Tested select phone functionality.
+  2022-01-31 15:10:31 INFO  LoggersExample:123 - Shopping cart is empty! Added product
+  2022-01-31 15:10:31 INFO  LoggersExample:190 - Tested empty cart in cart functionality.
+  2022-01-31 15:10:32 INFO  LoggersExample:76 - Updated count of item in cart
+  2022-01-31 15:10:33 INFO  LoggersExample:199 - Tested Update items in cart functionality.
+  2022-01-31 15:10:33 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 15:10:34 INFO  LoggersExample:85 - Clicked on remove button
+  2022-01-31 15:10:34 INFO  LoggersExample:208 - Tested Remove item from cart functionality.
+  2022-01-31 15:10:35 INFO  LoggersExample:222 - exception caught
+  2022-01-31 15:10:36 INFO  LoggersExample:230 - Logged Out succesfully
+  2022-01-31 15:10:36 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+  2022-01-31 15:10:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+  2022-01-31 15:10:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+  2022-01-31 15:10:36 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+  2022-01-31 15:10:36 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/extent_report_jars/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+  2022-01-31 15:10:36 INFO  LoggersExample:239 - Browser closed successfully!!!
+  2022-01-31 15:13:31 INFO  LoggersExample:35 - Browser opened successfully!!!
+  2022-01-31 15:13:32 INFO  LoggersExample:44 - Tested PhonesAndPDAs functionality.
+  2022-01-31 15:14:10 INFO  LoggersExample:51 - Tested select phone functionality.
+  2022-01-31 15:14:10 INFO  LoggersExample:58 - Browser closed successfully!!!
+  2022-01-31 15:18:38 INFO  LoggersExample:36 - Browser opened successfully!!!
+  2022-01-31 15:18:46 INFO  LoggersExample:100 -  successfully submitted
+  2022-01-31 15:18:56 INFO  LoggersExample:110 -  enter correct email
+  2022-01-31 15:19:26 INFO  LoggersExample:45 - Browser opened successfully!!!
+  2022-01-31 15:20:02 INFO  LoggersExample:45 - Browser opened successfully!!!
+  2022-01-31 15:20:03 INFO  LoggersExample:87 - Converted to€currency successfully
+  2022-01-31 15:20:03 INFO  LoggersExample:54 - Tested Euro currency functionality.
+  2022-01-31 15:20:04 INFO  LoggersExample:87 - Converted to£currency successfully
+  2022-01-31 15:20:04 INFO  LoggersExample:61 - Tested Pound currency functionality.
+  2022-01-31 15:20:05 INFO  LoggersExample:87 - Converted to$currency successfully
+  2022-01-31 15:20:05 INFO  LoggersExample:68 - Tested USDollar functionality.
+  2022-01-31 15:20:05 INFO  LoggersExample:75 - Browser closed successfully!!!
+  2022-01-31 16:04:19 INFO  LoggersExample:77 - Browser opened successfully!!!
+  2022-01-31 16:04:23 INFO  LoggersExample:100 -  successfully submitted
+  2022-01-31 16:04:23 INFO  LoggersExample:95 - Tested contact form with valid data
+  2022-01-31 16:04:25 INFO  LoggersExample:110 -  enter correct email
+  2022-01-31 16:04:25 INFO  LoggersExample:103 - Tested contact form with Invalid data
+  2022-01-31 16:04:25 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:04:27 INFO  LoggersExample:112 - Tested login page with Invalid data
+  2022-01-31 16:04:27 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:04:29 INFO  LoggersExample:121 - Tested login page with Invalid data
+  2022-01-31 16:04:29 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:04:31 INFO  LoggersExample:131 - Tested login page with valid data
+  2022-01-31 16:04:31 INFO  LoggersExample:87 - Converted to€currency successfully
+  2022-01-31 16:04:31 INFO  LoggersExample:139 - Tested Euro currency functionality.
+  2022-01-31 16:04:32 INFO  LoggersExample:87 - Converted to£currency successfully
+  2022-01-31 16:04:32 INFO  LoggersExample:147 - Tested Pound currency functionality.
+  2022-01-31 16:04:33 INFO  LoggersExample:87 - Converted to$currency successfully
+  2022-01-31 16:04:33 INFO  LoggersExample:155 - Tested USDollar functionality.
+  2022-01-31 16:04:36 INFO  LoggersExample:163 - Tested search functionality.
+  2022-01-31 16:04:37 INFO  LoggersExample:172 - Tested PhonesAndPDAs functionality.
+  2022-01-31 16:05:04 INFO  LoggersExample:182 - Tested select phone functionality.
+  2022-01-31 16:05:05 INFO  LoggersExample:133 - Shopping cart is empty! Added product
+  2022-01-31 16:05:05 INFO  LoggersExample:190 - Tested empty cart in cart functionality.
+  2022-01-31 16:05:07 INFO  LoggersExample:95 - Clicked on remove button
+  2022-01-31 16:05:07 INFO  LoggersExample:208 - Tested Remove item from cart functionality.
+  2022-01-31 16:05:10 INFO  LoggersExample:122 - E-Mail Address does not appear to be valid!
+  2022-01-31 16:05:10 INFO  LoggersExample:217 - Tested edit account info functionality with valid credentials.
+  2022-01-31 16:05:11 INFO  LoggersExample:230 - Logged Out succesfully
+  2022-01-31 16:05:11 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+  2022-01-31 16:05:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+  2022-01-31 16:05:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+  2022-01-31 16:05:11 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+  2022-01-31 16:05:11 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/extent_report_jars/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+  2022-01-31 16:05:11 INFO  LoggersExample:239 - Browser closed successfully!!!
+  2022-01-31 16:05:56 INFO  LoggersExample:77 - Browser opened successfully!!!
+  2022-01-31 16:06:00 INFO  LoggersExample:100 -  successfully submitted
+  2022-01-31 16:06:00 INFO  LoggersExample:95 - Tested contact form with valid data
+  2022-01-31 16:06:01 INFO  LoggersExample:110 -  enter correct email
+  2022-01-31 16:06:01 INFO  LoggersExample:103 - Tested contact form with Invalid data
+  2022-01-31 16:06:01 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:06:03 INFO  LoggersExample:112 - Tested login page with Invalid data
+  2022-01-31 16:06:04 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:06:05 INFO  LoggersExample:121 - Tested login page with Invalid data
+  2022-01-31 16:06:05 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:06:07 INFO  LoggersExample:131 - Tested login page with valid data
+  2022-01-31 16:06:08 INFO  LoggersExample:87 - Converted to€currency successfully
+  2022-01-31 16:06:08 INFO  LoggersExample:139 - Tested Euro currency functionality.
+  2022-01-31 16:06:08 INFO  LoggersExample:87 - Converted to£currency successfully
+  2022-01-31 16:06:08 INFO  LoggersExample:147 - Tested Pound currency functionality.
+  2022-01-31 16:06:09 INFO  LoggersExample:87 - Converted to$currency successfully
+  2022-01-31 16:06:09 INFO  LoggersExample:155 - Tested USDollar functionality.
+  2022-01-31 16:06:13 INFO  LoggersExample:163 - Tested search functionality.
+  2022-01-31 16:06:13 INFO  LoggersExample:172 - Tested PhonesAndPDAs functionality.
+  2022-01-31 16:06:45 INFO  LoggersExample:182 - Tested select phone functionality.
+  2022-01-31 16:06:45 INFO  LoggersExample:133 - Shopping cart is empty! Added product
+  2022-01-31 16:06:46 INFO  LoggersExample:190 - Tested empty cart in cart functionality.
+  2022-01-31 16:06:50 INFO  LoggersExample:86 - Updated count of item in cart
+  2022-01-31 16:06:51 INFO  LoggersExample:199 - Tested Update items in cart functionality.
+  2022-01-31 16:06:51 INFO  LoggersExample:39 - Took screenshot successfully
+  2022-01-31 16:06:51 INFO  LoggersExample:95 - Clicked on remove button
+  2022-01-31 16:06:51 INFO  LoggersExample:208 - Tested Remove item from cart functionality.
+  2022-01-31 16:06:54 INFO  LoggersExample:122 - E-Mail Address does not appear to be valid!
+  2022-01-31 16:06:54 INFO  LoggersExample:217 - Tested edit account info functionality with valid credentials.
+  2022-01-31 16:06:55 INFO  LoggersExample:230 - Logged Out succesfully
+  2022-01-31 16:06:55 DEBUG cache:45 - Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+  2022-01-31 16:06:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+  2022-01-31 16:06:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+  2022-01-31 16:06:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
+  2022-01-31 16:06:55 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/extent_report_jars/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+  2022-01-31 16:06:56 INFO  LoggersExample:239 - Browser closed successfully!!!
   

@@ -11,21 +11,22 @@ import org.testng.annotations.Test;
 
 import com.psl.OpenCart.commons.LoggersExample;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestTablets 
 {
 	
 	 WebDriver driver;
 	   
 	   @BeforeTest  // annotation
-	   public void setUp()
-	   {
-		   System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
-		     driver=new ChromeDriver();
-		     driver.get("http://localhost/Opencart");
-		     driver.manage().window().maximize();
-		     driver.manage().deleteAllCookies();
-		     System.out.println("Chrome opened Sucessfully");
-	   }
+		public void setUp() {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+			driver.get("http://localhost/Opencart");
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			System.out.println("Chrome opened Sucessfully");
+		}
 	   
 
 	@Test(priority = 1)

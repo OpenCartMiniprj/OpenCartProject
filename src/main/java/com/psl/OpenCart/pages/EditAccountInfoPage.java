@@ -68,19 +68,9 @@ public class EditAccountInfoPage {
 		try {
 		fis = new FileInputStream("LoginDetails.properties");
 		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		p.load(fis);
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream("LoginDetails.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		p.store(fos,null);
-		
 				
 		selenium.moveToElement(FirstNameTextBox, driver);
 		selenium.clear(FirstNameTextBox);
@@ -94,7 +84,6 @@ public class EditAccountInfoPage {
 		selenium.moveToElement(TelephoneTextBox, driver);
 		selenium.clear(TelephoneTextBox);
 		selenium.setText(p.getProperty("Telephone"), TelephoneTextBox);
-		Thread.sleep(3000);
 		selenium.click(SubmitEditAccountInfoForm);
 		selenium.validateTExtInEditAccountInfo(displaymsg, driver," Success: Your account has been successfully updated.");
 	}
@@ -117,15 +106,6 @@ public class EditAccountInfoPage {
 			e1.printStackTrace();
 		}
 		p.load(fis);
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream("LoginDetails.properties");
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		p.store(fos,null);
-		
 				
 		selenium.moveToElement(FirstNameTextBox, driver);
 		selenium.clear(FirstNameTextBox);
@@ -139,7 +119,6 @@ public class EditAccountInfoPage {
 		selenium.moveToElement(TelephoneTextBox, driver);
 		selenium.clear(TelephoneTextBox);
 		selenium.setText(p.getProperty("Telephone"), TelephoneTextBox);
-		Thread.sleep(3000);
 		selenium.click(SubmitEditAccountInfoForm);
 		selenium.InvalidateTExtInEditAccountInfo(displaymsg, driver,"E-Mail Address does not appear to be valid!");
 	}

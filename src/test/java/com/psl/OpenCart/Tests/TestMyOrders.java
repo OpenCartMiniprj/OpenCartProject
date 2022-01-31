@@ -12,14 +12,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestMyOrders {
 	WebDriver driver=null;
 	@Test(priority = 1)
 	public void openBrowserTest(){
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost/Opencart");
+		driver.get("http://localhost/opencartpro");
 	}
 	@Test(priority =2)
 	public void loginToPage()throws Throwable{

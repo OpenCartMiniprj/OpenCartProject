@@ -25,6 +25,8 @@ import com.psl.OpenCart.commons.LoggersExample;
 import com.psl.OpenCart.pages.CurrencyPage;
 import com.psl.OpenCart.pages.ShoppingCartPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 /**
  * @author segu_revathi
  *
@@ -36,10 +38,10 @@ public class TestCurrency {
 	@BeforeTest
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost/Opencart");
+		driver.get("http://localhost/opencartpro");
 		LoggersExample.logger.info("Browser opened successfully!!!");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		cur=new CurrencyPage(driver);

@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 import com.psl.OpenCart.commons.LoggersExample;
 import com.psl.OpenCart.pages.PhonesAndPDAsPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 /**
  * @author sindhuja_inturi
@@ -23,8 +25,8 @@ public class TestPhonesAndPDAs {
 	@BeforeTest
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
-		driver=new ChromeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://localhost/opencartpro");
 		LoggersExample.logger.info("Browser opened successfully!!!");

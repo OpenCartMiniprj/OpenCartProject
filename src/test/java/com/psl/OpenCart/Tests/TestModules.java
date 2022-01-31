@@ -29,13 +29,14 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import ExcelUtils.screenshot;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
  * @author segu_revathi
  *
  */
-public class TestModules {
+public class TestModules extends screenshot{
 	public static String browserName = "Chrome";
 	WebDriver driver;
 	ShoppingCartPage scPage;
@@ -101,6 +102,7 @@ public class TestModules {
 		cuPage.InvalidContactform(driver);
 		LoggersExample.logger.info("Tested contact form with Invalid data");
 		test.log(LogStatus.FAIL, "Tested contact form with Invalid data");
+		takeScreenshot(driver);
 	}
 	
 	@Test(priority=3)
@@ -109,6 +111,7 @@ public class TestModules {
 		loginPg.validateLoginfunc(driver,1);
 		LoggersExample.logger.info("Tested login page with Invalid data");
 		test.log(LogStatus.FAIL, "Tested login page with Invalid data");
+		takeScreenshot(driver);
 	}
 	
 	@Test(priority=4)
@@ -117,6 +120,7 @@ public class TestModules {
 		loginPg.validateLoginfunc(driver,3);
 		LoggersExample.logger.info("Tested login page with Invalid data");
 		test.log(LogStatus.FAIL, "Tested login page with Invalid data");
+		takeScreenshot(driver);
 	}
 
 	
@@ -194,6 +198,7 @@ public class TestModules {
 		Assert.assertTrue(scPage.validateUpdatefunc(driver));
 		LoggersExample.logger.info("Tested Update items in cart functionality.");
 		test.log(LogStatus.PASS, "Tested Update items in cart functionality.");
+		takeScreenshot(driver);
 	}
 
 	@Test(priority=14)

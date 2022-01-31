@@ -36,6 +36,7 @@ public class TestShoppingCart {
 
 	WebDriver driver;
 	private ShoppingCartPage scPage;
+	public static String browser = "chrome";
 	@Parameters({"browser"})
 	@BeforeTest
 	
@@ -54,17 +55,13 @@ public class TestShoppingCart {
 				//Check if parameter passed as 'chrome'
 				else if(browser.equalsIgnoreCase("chrome"))
 				{
-				//set path to chromedriver.exe
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				}
 				else if(browser.equalsIgnoreCase("Edge"))
 				{
-				//set path to Edge.exe
-				//EdgeOptions options=new EdgeOptions();
 				WebDriverManager.edgedriver().setup();
 				driver = new EdgeDriver();
-				//driver = new EdgeDriver();
 				}
 				else{
 				//If no browser is passed throw exception

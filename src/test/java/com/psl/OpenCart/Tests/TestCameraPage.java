@@ -8,16 +8,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestCameraPage {
 	WebDriver driver=null;
 	@Test(priority = 1)
 	public void openBrowserTest(){
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		//Open Website 
-		driver.get("http://localhost/Opencart");
+		driver.get("http://localhost/opencartpro");
 	}
 	@Test(priority = 2)
 	public void viewcameras(){

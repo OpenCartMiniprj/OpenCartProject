@@ -61,14 +61,6 @@ public class ContactUsPage {
 			e1.printStackTrace();
 		}
 		p.load(fis);
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream("ContactUsFormDetails.properties");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		p.store(fos,null);
-		
 				
 		selenium.moveToElement(NameTextBox, driver);
 		selenium.clear(NameTextBox);
@@ -79,7 +71,6 @@ public class ContactUsPage {
 		selenium.moveToElement(EnquiryTextBox, driver);
 		selenium.clear(EnquiryTextBox);
 		selenium.setText(p.getProperty("query"), EnquiryTextBox);
-		Thread.sleep(3000);
 		selenium.click(SubmitContactForm);
 		selenium.validateTExt1(displaymsg, driver,"Your enquiry has been successfully sent to the store owner!");
 	}
@@ -97,14 +88,6 @@ public class ContactUsPage {
 			e1.printStackTrace();
 		}
 		p.load(fis);
-		FileOutputStream fos = null;
-		try {
-			fos = new FileOutputStream("ContactUsFormDetails.properties");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
-		p.store(fos,null);
-		
 				
 		selenium.moveToElement(NameTextBox, driver);
 		selenium.clear(NameTextBox);
@@ -115,9 +98,7 @@ public class ContactUsPage {
 		selenium.moveToElement(EnquiryTextBox, driver);
 		selenium.clear(EnquiryTextBox);
 		selenium.setText(p.getProperty("query"), EnquiryTextBox);
-		Thread.sleep(3000);
 		selenium.click(SubmitContactForm);
-		Thread.sleep(5000);
 		selenium.InvalidateTExt(displaymsg, driver,"E-Mail Address does not appear to be valid!");
 	}
 

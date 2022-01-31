@@ -60,7 +60,6 @@ public class ShoppingCartPage {
 	WebElement addToCartBtn;
 	
 	SeleniumImplementation selenium;
-	Actions action;
 
 	public ShoppingCartPage(WebDriver driver)
 	{
@@ -70,10 +69,19 @@ public class ShoppingCartPage {
 	
 	public boolean validateUpdatefunc(WebDriver driver)
 	{
+		Properties p=new Properties();
+		FileInputStream fis = null;
+		try {
+		fis = new FileInputStream("updateData.properties");
+		p.load(fis);
+		}
+		catch (IOException e) {
+			e.printStackTrace();
+		}
 		selenium.click(ShoppingCartTab);
 		selenium.moveToElement(countOfItems, driver);
 		selenium.clear(countOfItems);
-		selenium.setText("10", countOfItems);
+		selenium.setText(p.getProperty(String.valueOf("updateValue")), countOfItems);
 		LoggersExample.logger.info("Updated count of item in cart");
 		selenium.click(updateBtn);
 		return selenium.validateTExt(popupmsg, driver,"Success: You have modified your shopping cart!\n×");
@@ -87,38 +95,9 @@ public class ShoppingCartPage {
 		return true;
 		
 	}
-	public boolean validateFinalTotal(WebDriver driver)
-	{
-		selenium.click(ShoppingCartTab);
-		return(selenium.finalPriceCheck(driver,itemTotals,finalTotal));
-		
-		
-	}
 	
-	public boolean validateAddCoupon(WebDriver driver) throws InterruptedException
-	{
-
-		Properties p=new Properties();
-		FileInputStream fis = null;
-		try {
-		fis = new FileInputStream("couponData.properties");
-		p.load(fis);
-		}
-		catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		String s=null;
-		selenium.click(ShoppingCartTab);
-		selenium.scroll("2000", driver);
-		selenium.click(couponDropDown);
-			selenium.moveToElement(couponInput, driver);
-			System.out.println(p.getProperty(String.valueOf("couponValue")));
-			selenium.setText(p.getProperty(String.valueOf("couponValue")), couponInput);
-			selenium.click(couponBtn);
-			return(selenium.addCouponCheck(driver));
-		
-	}
+	
+	
 	
 	public boolean validateEmptyShoppingCart(WebDriver driver)
 	{
@@ -147,7 +126,6 @@ public class ShoppingCartPage {
 	public void validateEmptyCart(WebDriver driver)
 	{
 		driver.findElement(By.xpath("//*[@id=\"top-links\"]/ul/li[4]/a")).click();
-		System.out.println("1");
 		String observedText= driver.findElement(By.xpath("//*[@id=\"content\"]/p")).getText();
 		if(observedText.equals("Your shopping cart is empty!"))
 		{

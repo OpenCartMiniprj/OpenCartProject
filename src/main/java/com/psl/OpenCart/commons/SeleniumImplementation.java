@@ -22,7 +22,6 @@ import com.psl.OpenCart.commons.LoggersExample;
 public class SeleniumImplementation {
 	double sum;
 	String li;
-	NumberFormat formatter = new DecimalFormat("#0.00");   
 	Actions action;
 	public void moveToElement(WebElement element,WebDriver driver)
 	{
@@ -80,73 +79,7 @@ public class SeleniumImplementation {
 		return false;
 	}
 	
-	public boolean finalPriceCheck(WebDriver driver,List<WebElement> itemTotals, WebElement finalTotal)
-	{
-		String x;
-		sum=0;
-		List<WebElement> values=itemTotals;
-		for (int i = 1; i < values.size(); i++) {
-			x=values.get(i).getText();
-			li = "";
-			for(int j=0; j<x.length(); j++)
-			{
-		         if(Character.isDigit(x.charAt(j))) {
-		            li+=x.charAt(j);
-		         }
-		         else if(x.charAt(j)=='.')
-		         {
-		        	 li+=x.charAt(j);
-		         }
-			}
-			sum+=Double.parseDouble(li);
-		}
-		String finalPrice=finalTotal.getText();
-		String li = "";
-		for(int j=0; j<finalPrice.length(); j++)
-		{
-	         if(Character.isDigit(finalPrice.charAt(j))) {
-	            li+=finalPrice.charAt(j);
-	         }
-	         else if(finalPrice.charAt(j)=='.')
-	         {
-	        	 li+=finalPrice.charAt(j);
-	         }
-		}
-		if(Double.parseDouble(li)>sum)
-		{
-			return true;
-		}
-		
-		return false;
-	}
 	
-	public double findFinalTotalPrice(WebDriver driver)
-	{
-		String finalPrice=driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div/table/tbody/tr[3]/td[2]")).getText();
-		String li = "";
-		for(int j=0; j<finalPrice.length(); j++)
-		{
-	         if(Character.isDigit(finalPrice.charAt(j))) {
-	            li+=finalPrice.charAt(j);
-	         }
-	         else if(finalPrice.charAt(j)=='.')
-	         {
-	        	 li+=finalPrice.charAt(j);
-	         }
-		}
-		return Double.parseDouble(li);
-	}
-	public boolean addCouponCheck(WebDriver driver ) 
-	{
-		Double tot=findFinalTotalPrice(driver);
-		double couponPrice=Double.parseDouble(formatter.format((sum-((sum)/10))));
-		if(couponPrice==tot)
-		{
-			LoggersExample.logger.info("Coupon applied and deducted 10%");
-			return true;
-		}
-		return false;
-	}
 
 	public boolean checkCurrency(WebElement symbol, WebDriver driver, String string) {
 		if((symbol.getText()).equals(string))

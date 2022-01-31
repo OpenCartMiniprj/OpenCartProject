@@ -11,12 +11,14 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import com.psl.OpenCart.commons.LoggersExample;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestDesktop {
 WebDriver driver=null;
 	
 	@Test(groups= {"Regression"})
 	public void driverSetup() {
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
@@ -25,7 +27,7 @@ WebDriver driver=null;
 	
 	@Test(priority=1)
 	public void openBrowser() {
-		driver.get("http://localhost/Opencart");
+		driver.get("http://localhost/opencartpro");
 	}
 	@Test(priority=2)
 	public void openDesktopModule(){

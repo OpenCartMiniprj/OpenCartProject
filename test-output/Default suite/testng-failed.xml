@@ -3,13 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.psl.OpenCart.Tests.TestFinalModules">
+      <class name="com.psl.OpenCart.Tests.TestModules">
         <methods>
+          <include name="setup"/>
           <include name="endTest"/>
-          <include name="RegistertestRegisterPager"/>
+          <include name="validateShoppingCartPFUpdateFunc"/>
           <include name="startTest"/>
+          <include name="closeBrowsers"/>
         </methods>
-      </class> <!-- com.psl.OpenCart.Tests.TestFinalModules -->
+      </class> <!-- com.psl.OpenCart.Tests.TestModules -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

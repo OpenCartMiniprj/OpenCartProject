@@ -11,15 +11,17 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class TestCheckoutPage {
 
 	WebDriver d;
 
 	@BeforeTest
 	public void login() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		d = new ChromeDriver();
-		d.get("http://localhost/Opencart");
+		d.get("http://localhost/opencartpro");
 		d.manage().window().maximize();
 		// My Account
 		WebElement my_acc = d.findElement(By.linkText("My Account"));

@@ -19,6 +19,8 @@ import org.testng.annotations.Test;
 import com.psl.OpenCart.commons.LoggersExample;
 import com.psl.OpenCart.pages.EditAccountInfoPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 
@@ -30,10 +32,10 @@ public class TestEditAccountInfo {
 	@BeforeTest
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver","D:\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.get("http://localhost/Opencart");
+		driver.get("http://localhost/opencartpro");
 		LoggersExample.logger.info("Browser opened successfully!!!");
 		try {
 			
