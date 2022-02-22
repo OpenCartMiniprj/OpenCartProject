@@ -2224,4 +2224,20 @@ Share
   2022-01-31 16:06:55 DEBUG cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
   2022-01-31 16:06:55 DEBUG cache:45 - Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/D:/extent_report_jars/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
   2022-01-31 16:06:56 INFO  LoggersExample:239 - Browser closed successfully!!!
+  2022-02-32 12:47:59 INFO  LoggersExample:28 - Chrome opened Sucessfully
+  2022-02-32 12:47:59 INFO  LoggersExample:36 - components module is present in the Home page
+  2022-02-32 12:47:59 INFO  LoggersExample:43 - Clicked on the components module
+  2022-02-32 12:48:00 INFO  LoggersExample:43 - Clicked on the components module
+  2022-02-32 12:48:49 INFO  LoggersExample:28 - Chrome opened Sucessfully
+  2022-02-32 12:48:49 INFO  LoggersExample:36 - components module is present in the Home page
+  2022-02-32 12:48:49 INFO  LoggersExample:43 - Clicked on the components module
+  2022-02-32 12:48:51 INFO  LoggersExample:43 - Clicked on the components module
+  2022-02-32 12:52:53 INFO  LoggersExample:28 - Chrome opened Sucessfully
+  2022-02-32 12:52:53 INFO  LoggersExample:36 - components module is present in the Home page
+  2022-02-32 12:52:53 INFO  LoggersExample:43 - Clicked on the components module
+  2022-02-32 12:52:54 INFO  LoggersExample:43 - Clicked on the components module
+  2022-02-32 12:54:37 INFO  LoggersExample:30 - Chrome opened Sucessfully
+  2022-02-32 12:54:37 INFO  LoggersExample:39 - components module is present in the Home page
+  2022-02-32 12:54:37 INFO  LoggersExample:46 - Clicked on the components module
+  2022-02-32 12:54:38 INFO  LoggersExample:46 - Clicked on the components module
   

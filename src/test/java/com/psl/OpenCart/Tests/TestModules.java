@@ -186,7 +186,7 @@ public class TestModules extends screenshot{
 	@Test(priority=12)
 	public void validateShoppingCartEmpty()
 	{
-		scPage.validateEmptyCart(driver);
+		scPage.validateEmptyCartFunc(driver);
 		LoggersExample.logger.info("Tested empty cart in cart functionality.");
 		test.log(LogStatus.PASS, "Tested empty cart in cart functionality.");
 		
@@ -198,7 +198,6 @@ public class TestModules extends screenshot{
 		Assert.assertTrue(scPage.validateUpdatefunc(driver));
 		LoggersExample.logger.info("Tested Update items in cart functionality.");
 		test.log(LogStatus.PASS, "Tested Update items in cart functionality.");
-		takeScreenshot(driver);
 	}
 
 	@Test(priority=14)

@@ -1,93 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="16" passed="16">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="66892" started-at="2022-01-31T16:05:49 IST" finished-at="2022-01-31T16:06:56 IST">
+  <suite name="Default suite" duration-ms="31007" started-at="2022-02-01T12:54:28 IST" finished-at="2022-02-01T12:54:59 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="66892" started-at="2022-01-31T16:05:49 IST" finished-at="2022-01-31T16:06:56 IST">
-      <class name="com.psl.OpenCart.Tests.TestModules">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="setup" is-config="true" duration-ms="7260" started-at="2022-01-31T16:05:49 IST" finished-at="2022-01-31T16:05:56 IST">
+    <test name="Default test" duration-ms="31007" started-at="2022-02-01T12:54:28 IST" finished-at="2022-02-01T12:54:59 IST">
+      <class name="com.psl.OpenCart.Tests.TestComponents">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.psl.OpenCart.Tests.TestComponents@31206beb]" name="setUp" is-config="true" duration-ms="8290" started-at="2022-02-01T12:54:28 IST" finished-at="2022-02-01T12:54:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="PASS" signature="startTest()[pri:0, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="startTest" is-config="true" duration-ms="137" started-at="2022-01-31T16:05:56 IST" finished-at="2022-01-31T16:05:56 IST">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyComponentsModuleInHomePage()[pri:1, instance:com.psl.OpenCart.Tests.TestComponents@31206beb]" name="verifyComponentsModuleInHomePage" duration-ms="68" started-at="2022-02-01T12:54:37 IST" finished-at="2022-02-01T12:54:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTest -->
-        <test-method status="PASS" signature="validateContactformValid()[pri:1, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateContactformValid" duration-ms="3634" started-at="2022-01-31T16:05:56 IST" finished-at="2022-01-31T16:06:00 IST">
+        </test-method> <!-- verifyComponentsModuleInHomePage -->
+        <test-method status="PASS" signature="verifyComponentsIsClickable()[pri:2, instance:com.psl.OpenCart.Tests.TestComponents@31206beb]" name="verifyComponentsIsClickable" duration-ms="980" started-at="2022-02-01T12:54:37 IST" finished-at="2022-02-01T12:54:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateContactformValid -->
-        <test-method status="PASS" signature="validateContactformInvalid()[pri:2, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateContactformInvalid" duration-ms="1684" started-at="2022-01-31T16:06:00 IST" finished-at="2022-01-31T16:06:01 IST">
+        </test-method> <!-- verifyComponentsIsClickable -->
+        <test-method status="PASS" signature="addingToCart()[pri:3, instance:com.psl.OpenCart.Tests.TestComponents@31206beb]" name="addingToCart" duration-ms="21623" started-at="2022-02-01T12:54:38 IST" finished-at="2022-02-01T12:54:59 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateContactformInvalid -->
-        <test-method status="PASS" signature="validateLoginInvalidCred()[pri:3, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateLoginInvalidCred" duration-ms="2181" started-at="2022-01-31T16:06:01 IST" finished-at="2022-01-31T16:06:04 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginInvalidCred -->
-        <test-method status="PASS" signature="validateLoginBlankCred()[pri:4, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateLoginBlankCred" duration-ms="1541" started-at="2022-01-31T16:06:04 IST" finished-at="2022-01-31T16:06:05 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginBlankCred -->
-        <test-method status="PASS" signature="validateLoginValidCred()[pri:5, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateLoginValidCred" duration-ms="1714" started-at="2022-01-31T16:06:05 IST" finished-at="2022-01-31T16:06:07 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateLoginValidCred -->
-        <test-method status="PASS" signature="validateCurrencyEurofunc()[pri:6, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateCurrencyEurofunc" duration-ms="780" started-at="2022-01-31T16:06:07 IST" finished-at="2022-01-31T16:06:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCurrencyEurofunc -->
-        <test-method status="PASS" signature="validateCurrencyPoundfunc()[pri:7, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateCurrencyPoundfunc" duration-ms="732" started-at="2022-01-31T16:06:08 IST" finished-at="2022-01-31T16:06:08 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCurrencyPoundfunc -->
-        <test-method status="PASS" signature="validateCurrencyUSDollarfunc()[pri:8, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateCurrencyUSDollarfunc" duration-ms="782" started-at="2022-01-31T16:06:08 IST" finished-at="2022-01-31T16:06:09 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateCurrencyUSDollarfunc -->
-        <test-method status="PASS" signature="searchFunction()[pri:9, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="searchFunction" duration-ms="3581" started-at="2022-01-31T16:06:09 IST" finished-at="2022-01-31T16:06:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchFunction -->
-        <test-method status="PASS" signature="validatePhonesAndPDAsfunc()[pri:10, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validatePhonesAndPDAsfunc" duration-ms="750" started-at="2022-01-31T16:06:13 IST" finished-at="2022-01-31T16:06:13 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePhonesAndPDAsfunc -->
-        <test-method status="PASS" signature="validatePhoneSelectfunc()[pri:11, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validatePhoneSelectfunc" duration-ms="31366" started-at="2022-01-31T16:06:13 IST" finished-at="2022-01-31T16:06:45 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validatePhoneSelectfunc -->
-        <test-method status="PASS" signature="validateShoppingCartEmpty()[pri:12, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateShoppingCartEmpty" duration-ms="1229" started-at="2022-01-31T16:06:45 IST" finished-at="2022-01-31T16:06:46 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateShoppingCartEmpty -->
-        <test-method status="PASS" signature="validateShoppingCartPFUpdateFunc()[pri:13, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateShoppingCartPFUpdateFunc" duration-ms="4850" started-at="2022-01-31T16:06:46 IST" finished-at="2022-01-31T16:06:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateShoppingCartPFUpdateFunc -->
-        <test-method status="PASS" signature="validateShoppingCartRemoveFunc()[pri:14, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateShoppingCartRemoveFunc" duration-ms="520" started-at="2022-01-31T16:06:51 IST" finished-at="2022-01-31T16:06:51 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateShoppingCartRemoveFunc -->
-        <test-method status="PASS" signature="validateEditAccInfoValid()[pri:15, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="validateEditAccInfoValid" duration-ms="3002" started-at="2022-01-31T16:06:51 IST" finished-at="2022-01-31T16:06:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateEditAccInfoValid -->
-        <test-method status="PASS" signature="LogoutFunction()[pri:16, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="LogoutFunction" duration-ms="646" started-at="2022-01-31T16:06:54 IST" finished-at="2022-01-31T16:06:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LogoutFunction -->
-        <test-method status="PASS" signature="endTest()[pri:0, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="endTest" is-config="true" duration-ms="304" started-at="2022-01-31T16:06:55 IST" finished-at="2022-01-31T16:06:55 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method status="PASS" signature="closeBrowsers()[pri:0, instance:com.psl.OpenCart.Tests.TestModules@37574691]" name="closeBrowsers" is-config="true" duration-ms="154" started-at="2022-01-31T16:06:55 IST" finished-at="2022-01-31T16:06:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowsers -->
-      </class> <!-- com.psl.OpenCart.Tests.TestModules -->
+        </test-method> <!-- addingToCart -->
+      </class> <!-- com.psl.OpenCart.Tests.TestComponents -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

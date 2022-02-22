@@ -1,6 +1,8 @@
 package com.psl.OpenCart.Tests;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,19 +13,23 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.psl.OpenCart.commons.LoggersExample;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestComponents {
 	WebDriver driver;
 
+	@SuppressWarnings("deprecation")
 	@BeforeTest // annotation
 	public void setUp() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.get("http://localhost/Opencart");
+		driver.get("http://localhost/opencartpro");
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		System.out.println("Chrome opened Sucessfully");
+		LoggersExample.logger.info("Chrome opened Sucessfully");
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 	}
 
 	@Test(priority = 1)
@@ -31,14 +37,14 @@ public class TestComponents {
 		// Checking whether the components module is present in the Home page
 		boolean flag = driver.findElement(By.xpath("//*[@id=\"menu\"]/div[2]/ul/li[3]/a")).isDisplayed();
 		Assert.assertTrue(flag);
-		System.out.println("components module is present in the Home page");
+		LoggersExample.logger.info("components module is present in the Home page");
 	}
 
 	@Test(priority = 2)
 	public void verifyComponentsIsClickable() throws InterruptedException {
 		// Check whether the module is clickable or not
 		driver.findElement(By.xpath("//*[@id=\"menu\"]/div[2]/ul/li[3]/a")).click();
-		System.out.println("Clicked on the components module");
+		LoggersExample.logger.info("Clicked on the components module");
 		// clicking on Show all components in drop-down list
 		driver.findElement(By.xpath("//*[@id=\"menu\"]/div[2]/ul/li[3]/div/a")).click();
 	}
@@ -76,7 +82,7 @@ public class TestComponents {
 		Thread.sleep(2000);
 
 		// Using AutoIT to Upload the file
-		Runtime.getRuntime().exec("C:\\Users\\tejal_borase\\Desktop\\Mini Project Phase 2\\Files\\FileUpload.exe");
+		Runtime.getRuntime().exec("C:\\Users\\segu_revathi\\Desktop\\MiniProject\\AutoIT\\FileUpload.exe");
 		Thread.sleep(5000);
 
 		// Accepting the Alert

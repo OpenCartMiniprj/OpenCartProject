@@ -96,23 +96,9 @@ public class ShoppingCartPage {
 		
 	}
 	
-	
-	
-	
-	public boolean validateEmptyShoppingCart(WebDriver driver)
-	{
-		String observedMsg=cartMsg.getText();
-		if(observedMsg.equals("Your shopping cart is empty!"))
-		{
-			return true;
-		}
-		return false;
-		
-	}
-
 	public boolean validateEmptyCartFunc(WebDriver driver) {
 		// TODO Auto-generated method stub
-		selenium.clear(ShoppingCartTab);
+		selenium.click(ShoppingCartTab);
 		if(selenium.validateTExt(emptyMsg, driver, "Your shopping cart is empty!"))
 		{
 			selenium.click(continueBtn);
